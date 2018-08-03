@@ -104,7 +104,7 @@ else
 
 if (myContact.zipcode.value === null ||
 myContact.zipcode.value === "" ||
-myContact.zipcode.value.length ===5 ||
+myContact.zipcode.value.length !=5 ||
 !myContact.zipcode.value.match(numbers))
 errorMessages += "<p>A valid Zipcode of 5 numbers is required.</p>";
 else
