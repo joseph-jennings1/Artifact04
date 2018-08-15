@@ -78,7 +78,7 @@ else
  myContact.address.value==="")
   errorMessages += "<p>An Address is required.</p>";
   else
- validAddress =true;
+ validAddress = true;
 
 /*********** VALIDATES City ******** */
  if (myContact.lastname.value===null ||
@@ -86,7 +86,7 @@ else
  !myContact.lastname.value.match(letters))
  errorMessages += "<p>A City is required. Only letters are accepted.</p>";
  else
- validLastName = true; 
+ validCity = true; 
 
 
 /*********** VALIDATES Zipcode ******** */
@@ -95,7 +95,7 @@ else
 if (country === "USA" &&
 (myContact.zipcode.value === null ||
 myContact.zipcode.value === "" ||
-myContact.zipcode.value.length ===5 ||
+myContact.zipcode.value.length !=5 ||
 !myContact.zipcode.value.match(numbers))
 errorMessages += "<p>A valid Zipcode of 5 numbers is required.</p>";
 else
