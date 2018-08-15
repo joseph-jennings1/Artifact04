@@ -90,18 +90,18 @@ else
 
 
 /*********** VALIDATES Zipcode ******** */
-/* Currently not working!  Zip must only validate for USA
+
  var country = document.getElementById("country").value;
 if (country === "USA" &&
-myContact.zipcode.value === null ||
+(myContact.zipcode.value === null ||
 myContact.zipcode.value === "" ||
 myContact.zipcode.value.length ===5 ||
-!myContact.zipcode.value.match(numbers)
+!myContact.zipcode.value.match(numbers))
 errorMessages += "<p>A valid Zipcode of 5 numbers is required.</p>";
 else
 	validZipcode = true; 
-*/
 
+/*
 if (myContact.zipcode.value === null ||
 myContact.zipcode.value === "" ||
 myContact.zipcode.value.length !=5 ||
@@ -109,6 +109,7 @@ myContact.zipcode.value.length !=5 ||
 errorMessages += "<p>A valid Zipcode of 5 numbers is required.</p>";
 else
 	validZipcode = true;
+	*/
 
  document.getElementById("errorMessages").innerHTML = errorMessages;
 // Make sure you return all the boolean variables that are checking each field
